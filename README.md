@@ -38,14 +38,14 @@ This tool allows developers and teams to simplify file management workflows, ens
 ### 2. `s3_upload_base64`
 
 **Description:** Uploads a base64-encoded object to the configured S3 bucket and returns its public URL. 
-If base64 comes from the sandbox, you have to adjust the value of CODE_MAX_STRING_LENGTH 
+If base64 comes from the sandbox, you have to adjust the value of CODE_MAX_STRING_LENGTH
+
 **Parameters:**
 
-- **Base64 string:** The content in base64 format to be uploaded.
-- **S3 key:** The key (destination path) for the object in the S3 bucket.
+- **Base64 string:** The content in base64 format to be uploaded.(required)
+- **S3 key:** The key (destination path) for the object in the S3 bucket.(required)
 
 ## Author
-
 
 
 Created by [datoujiejie](https://github.com/datoujiejie)
@@ -53,5 +53,4 @@ Created by [datoujiejie](https://github.com/datoujiejie)
 ## Repository
 
 
-
-https://github.com/datoujiejie/botos3
+https://github.com/datoujiejie/dify-botos3-plugin

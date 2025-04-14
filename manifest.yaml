@@ -1,0 +1,42 @@
+version: 0.0.1
+type: plugin
+author: datoujiejie
+name: botos3
+label:
+  en_US: botos3
+  ja_JP: botos3
+  zh_Hans: botos3
+  pt_BR: botos3
+description:
+  en_US: upload file  by boto s3
+  ja_JP: upload file  by boto s3
+  zh_Hans: upload file  by boto s3
+  pt_BR: upload file  by boto s3
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/botos3.yaml
+meta:
+  version: 0.0.2
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-04-09T16:52:50.264738+08:00
+privacy: PRIVACY.md
+verified: false

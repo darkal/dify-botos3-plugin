@@ -37,7 +37,8 @@ This tool allows developers and teams to simplify file management workflows, ens
 
 ### 2. `s3_upload_base64`
 
-**Description:** Uploads a base64-encoded object to the configured S3 bucket and returns its public URL.
+**Description:** Uploads a base64-encoded object to the configured S3 bucket and returns its public URL. 
+If base64 comes from the sandbox, you have to adjust the value of CODE_MAX_STRING_LENGTH 
 **Parameters:**
 
 - **Base64 string:** The content in base64 format to be uploaded.

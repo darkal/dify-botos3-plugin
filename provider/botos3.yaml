@@ -6,9 +6,8 @@ identity:
     zh_Hans: botos3
     pt_BR: botos3
   description:
-    en_US: 通过boto库操作s3协议
+    en_US: upload file by boto s3
     zh_Hans: 通过boto库操作s3协议
-    pt_BR: 通过boto库操作s3协议
   icon: icon.svg
 credentials_for_provider:
   DIFY_ENDPOINT:
@@ -99,5 +98,5 @@ tools:
 extra:
   python:
     source: provider/botos3.py
-tags: # 标签，用于前端展示
+tags:
     - utilities

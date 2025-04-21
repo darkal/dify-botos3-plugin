@@ -4,14 +4,10 @@ author: datoujiejie
 name: botos3
 label:
   en_US: botos3
-  ja_JP: botos3
   zh_Hans: botos3
-  pt_BR: botos3
 description:
-  en_US: upload file  by boto s3
-  ja_JP: upload file  by boto s3
-  zh_Hans: upload file  by boto s3
-  pt_BR: upload file  by boto s3
+  en_US: upload file by boto s3
+  zh_Hans: 通过s3库上传文件
 icon: icon.svg
 resource:
   memory: 268435456

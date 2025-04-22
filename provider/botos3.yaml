@@ -4,7 +4,6 @@ identity:
   label:
     en_US: botos3
     zh_Hans: botos3
-    pt_BR: botos3
   description:
     en_US: upload file by boto s3
     zh_Hans: 通过boto库操作s3协议

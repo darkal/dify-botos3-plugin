@@ -9,7 +9,7 @@ import base64
 import io
 import requests
 
-class S3UploadBase64(Tool):
+class S3UploadFile(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         self.s3_client = boto3.client(
             's3',

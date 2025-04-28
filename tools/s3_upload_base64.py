@@ -7,9 +7,8 @@ import boto3
 from botocore.config import Config
 import base64
 import io
-import requests
 
-class S3UploadFile(Tool):
+class S3UploadBase64(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         self.s3_client = boto3.client(
             's3',

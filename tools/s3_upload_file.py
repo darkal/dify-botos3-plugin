@@ -28,7 +28,8 @@ class S3UploadFile(Tool):
             if not file_url.startswith("http"):
                 file_url = self.runtime.credentials["DIFY_ENDPOINT"] + file.url
         response = requests.get(file_url, stream=True, verify=False)
-        response.raise_for_status()  # 确保请求成功
+        response.raw.decode_content = True
+        response.raise_for_status()
 
         # 上传到 S3
         self.s3_client.upload_fileobj(

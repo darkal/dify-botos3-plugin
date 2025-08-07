@@ -19,6 +19,7 @@ class Botos3Provider(ToolProvider):
                 endpoint_url=credentials["S3_ENDPOINT"],
                 aws_access_key_id=credentials["S3_ACCESS_KEY"],
                 aws_secret_access_key=credentials["S3_SECRET_KEY"],
+                region_name='cn-beijing'
             )
             s3_client.list_objects_v2(Bucket=credentials["BUCKET_NAME"])# This will raise an error if credentials are invalid
         except Exception as e:
